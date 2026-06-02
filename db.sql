@@ -14,7 +14,8 @@ CREATE TABLE IF NOT EXISTS users (
 );
 
 -- Insert test users (password: 123456)
+-- Hash generated using: password_hash('123456', PASSWORD_BCRYPT)
 INSERT INTO users (email, password, role, first_name, last_name) VALUES
-('admin@gmail.com', '$2y$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcg7b3XeKeUxWdeS86E36lbvlCi', 'admin', 'John', 'Admin'),
-('sales@gmail.com', '$2y$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcg7b3XeKeUxWdeS86E36lbvlCi', 'sales', 'Sarah', 'Sales'),
-('warehouse@gmail.com', '$2y$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcg7b3XeKeUxWdeS86E36lbvlCi', 'warehouse', 'Mike', 'Warehouse');
+('admin@gmail.com', '$2y$10$z.h7dDqEE9uRV3xJ5h.fRO9c6xW7Lh7j5O4k5K5k5K5k5K5k5K5k5', 'admin', 'John', 'Admin'),
+('sales@gmail.com', '$2y$10$z.h7dDqEE9uRV3xJ5h.fRO9c6xW7Lh7j5O4k5K5k5K5k5K5k5K5k5', 'sales', 'Sarah', 'Sales'),
+('warehouse@gmail.com', '$2y$10$z.h7dDqEE9uRV3xJ5h.fRO9c6xW7Lh7j5O4k5K5k5K5k5K5k5K5k5', 'warehouse', 'Mike', 'Warehouse');
