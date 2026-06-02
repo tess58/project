@@ -1,11 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>hello world!</h1>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - SalePro Dashboard</title>
+  <link rel="stylesheet" href="assets/login.css">
+</head>
+<body>
+  <button class="theme-toggle-login" id="themeToggleLogin" title="Toggle dark mode">🌙</button>
+
+  <div class="login-container">
+    <div class="logo-section">
+      <h1>SalePro</h1>
+      <p>Dashboard Login</p>
+    </div>
+
+    <form id="loginForm" method="POST" action="auth/login.php">
+      <div class="error-message" id="errorMessage"></div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Enter your email" 
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input 
+          type="password" 
+          id="password" 
+          name="password" 
+          placeholder="Enter your password" 
+          required
+        >
+      </div>
+
+      <div class="forgot-password">
+        <a href="#forgot">Forgot Password?</a>
+      </div>
+
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+  </div>
+
+  <script src="assets/login.js"></script>
+</body>
 </html>
